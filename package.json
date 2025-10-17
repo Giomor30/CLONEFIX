@@ -1,0 +1,17 @@
+{
+  "name": "clonefix",
+  "version": "1.0.0",
+  "description": "Clone de Netflix con búsqueda de películas usando TVMaze API",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 5050 -o",
+    "dev": "npx live-server --port=5050 --open=/index.html"
+  },
+  "keywords": ["netflix", "clone", "movies", "tv shows", "tvmaze"],
+  "author": "CLONEFIX Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}

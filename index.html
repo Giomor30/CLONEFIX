@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLONEFIX</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1 class="logo">Clone</h1>
+            </div>
+            <div class="header-right">
+                <input type="text" class="search-input" placeholder="Busca tu movie..">
+                <button class="search-btn">Buscar</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="hero-section">
+                <button class="watch-now-btn">Ver Ahora</button>
+            </div>
+            
+            <div class="trending-section">
+                <h2 class="trending-title">Tendendias</h2>
+                <p class="api-credit">Hecho con ❤️ utilizando TVMaze</p>
+                <div class="movies-grid" id="moviesGrid">
+                    <!-- Las películas se cargarán aquí dinámicamente -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal de información de película -->
+    <div class="modal-overlay" id="movieModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Título de la película</h2>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-poster">
+                    <img id="modalImage" src="" alt="Poster de la película">
+                </div>
+                
+                <div class="modal-info">
+                    <div class="modal-genres" id="modalGenres">
+                        <!-- Los géneros se cargarán aquí -->
+                    </div>
+                    
+                    <div class="modal-description" id="modalDescription">
+                        Descripción de la película...
+                    </div>
+                    
+                    <div class="modal-details" id="modalDetails">
+                        <!-- Detalles adicionales -->
+                    </div>
+                    
+                    <button class="web-site-btn" id="webSiteBtn">Web Site</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
